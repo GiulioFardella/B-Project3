@@ -70,10 +70,17 @@ public class Main {
                    System.out.println(("elemento eliminato"));
 
 
-                   case 3:
+
 
         }
-
+            case 3:
+                System.out.println("inserisci ISBN per la ricerca");
+                int isbnDacercare = scanner.nextInt();
+                ElementoCatalogoDAO risultato = elementoCatalogoDAO.ricercaperISBN(isbnDacercare);
+            case 4:
+                System.out.println("ricerca per anno di pubblicazione");
+                int annodacercare = scanner.nextInt();
+                ElementoCatalogoDAO risultatoanno = elementoCatalogoDAO.ricercaperAnno(annodacercare);
     }
 }
 }
